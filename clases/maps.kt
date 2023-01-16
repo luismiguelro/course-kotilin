@@ -38,4 +38,5 @@ fun main(args: Array<String>) {
   println(edadSuperHeroesMutable.keys)
   /*[IronMan, Spiderman, Capitan America, Storm*/
   println(edadSuperHeroesMutable.values)
+  /*[35, 23, 99, 30]*/
 }
