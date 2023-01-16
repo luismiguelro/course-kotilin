@@ -266,7 +266,7 @@ Recuerden!
 - La principal diferencia entre una lista y un array es que la lista no puede actualizar ninguna de las referencias que almacena.
 
 ## ****Como ordenar listas con las funciones que tiene Kotlin****
-[https://replit.com/@LuisMiguelRguez/course-kotilin#clases/listas/funciones-lista.kt](Código de la clase)
+[https://replit.com/@LuisMiguelRguez/course-kotilin#clases/listas/funciones-lista.kt]
 
 ## Maps
 
@@ -278,4 +278,4 @@ Maps:
 
 Antes de buscar como hacer algo manualmente, preguntarnos si existe una funcion que lo hace
 
-[https://replit.com/@LuisMiguelRguez/course-kotilin#clases/maps.kt](Código de la clase)
+[https://replit.com/@LuisMiguelRguez/course-kotilin#clases/maps.kt]
