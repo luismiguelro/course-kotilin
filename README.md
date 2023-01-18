@@ -256,7 +256,7 @@ Mutables: Es decir, las que se pueden editar
 
 Inmutables:  Las que son solo de lectura
 
-[https://replit.com/@LuisMiguelRguez/course-kotilin#clases/listas.kt](https://replit.com/@LuisMiguelRguez/course-kotilin#clases/listas.kt)
+[https://replit.com/@LuisMiguelRguez/course-kotilin#clases/listas.kt](Código de la clase)
 
 Recuerden!
 
@@ -266,3 +266,26 @@ Recuerden!
 - La principal diferencia entre una lista y un array es que la lista no puede actualizar ninguna de las referencias que almacena.
 
 ## ****Como ordenar listas con las funciones que tiene Kotlin****
+[https://replit.com/@LuisMiguelRguez/course-kotilin#clases/listas/funciones-lista.kt]
+
+## Maps
+
+Maps:  
+
+- Ordenar elementos
+    - Clave: tiene un valor y es de un mismo tipo
+    - Valor: puede pertenecer a varias claves
+
+Antes de buscar como hacer algo manualmente, preguntarnos si existe una funcion que lo hace
+
+[https://replit.com/@LuisMiguelRguez/course-kotilin#clases/maps.kt]
+
+## Set
+
+
+Sets:
+Kotlin set es una colección desordenada de elementos. Un conjunto Kotlin puede ser mutable (mutableSetOf) o de sólo lectura (setOf). Los conjuntos mutables o inmutables de Kotlin no permiten tener elementos duplicados.
+
+[Sets En Kotlin - Develou](https://www.develou.com/sets-en-kotlin/)
+
+[https://replit.com/@LuisMiguelRguez/course-kotilin#clases/sets.kt](https://replit.com/@LuisMiguelRguez/course-kotilin#clases/sets.kt)
