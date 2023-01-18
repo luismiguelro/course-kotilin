@@ -279,3 +279,13 @@ Maps:
 Antes de buscar como hacer algo manualmente, preguntarnos si existe una funcion que lo hace
 
 [https://replit.com/@LuisMiguelRguez/course-kotilin#clases/maps.kt]
+
+## Set
+
+
+Sets:
+Kotlin set es una colección desordenada de elementos. Un conjunto Kotlin puede ser mutable (mutableSetOf) o de sólo lectura (setOf). Los conjuntos mutables o inmutables de Kotlin no permiten tener elementos duplicados.
+
+[Sets En Kotlin - Develou](https://www.develou.com/sets-en-kotlin/)
+
+[https://replit.com/@LuisMiguelRguez/course-kotilin#clases/sets.kt](https://replit.com/@LuisMiguelRguez/course-kotilin#clases/sets.kt)
