@@ -289,3 +289,50 @@ Kotlin set es una colección desordenada de elementos. Un conjunto Kotlin puede 
 [Sets En Kotlin - Develou](https://www.develou.com/sets-en-kotlin/)
 
 [https://replit.com/@LuisMiguelRguez/course-kotilin#clases/sets.kt](https://replit.com/@LuisMiguelRguez/course-kotilin#clases/sets.kt)
+
+## ¿Qué son las funciones?
+
+Una función es un código que se ejecuta cada vez que lo llamamos.
+
+**Sintaxis de una función**
+
+Las funciones más básicas se componen de 4 partes.
+
+- Palabra reservada fun.
+- Nombre de la función.
+- Parámetros: Son las variables que le damos a la función para que las use en el código que ejecuta internamente.
+- Tipo de retorno: Puede tener o no un valor de retorno.
+- Código: Son las instrucciones que se van a ejecutar al llamar a la función.
+
+Ejemplo de función:
+
+![https://static.platzi.com/media/user_upload/ejemplo-funcion-c53ba9d2-3278-47e4-91c7-85894fb98cc5.jpg](https://static.platzi.com/media/user_upload/ejemplo-funcion-c53ba9d2-3278-47e4-91c7-85894fb98cc5.jpg)
+
+Cuando queremos devolver algo de nuestra función usamos la keyword **return**.Caso contrario cuando no queremos devolver nada de nuestra función, Kotlin regresaría **Unit**.
+
+Ejemplo de función que no devuelve nada, no tiene ningún tipo de retorno.
+
+![https://static.platzi.com/media/user_upload/funcion%20sin%20retorno-f8b5644b-410b-48ca-927c-43c66a1a4971.jpg](https://static.platzi.com/media/user_upload/funcion%20sin%20retorno-f8b5644b-410b-48ca-927c-43c66a1a4971.jpg)
+
+[https://replit.com/@LuisMiguelRguez/course-kotilin#clases/funcion.kt](https://replit.com/@LuisMiguelRguez/course-kotilin#clases/funcion.kt)
+
+**Funciones de extension**
+
+- Extiende funcionalidades de una clase
+- tiene un nuevo parámetro : recibidor
+
+Se declara tal que asi
+
+```kotlin
+fun String.randomCase() :String {
+	val numeroAleatorio = 0..99
+	  val resultadoAleatorio = numeroAleatorio.random()
+	  return if(resultadoAleatorio.rem(2)==0){
+	     this.toUpperCase()
+	  } else{
+	    return this.toLowerCase()
+	  }
+}
+```
+
+En otras palabras, una funcion de extensión es una función que puede ser llamada como miembro de una clase, pero esta definida por fuera de lla
