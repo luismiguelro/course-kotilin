@@ -335,4 +335,26 @@ fun String.randomCase() :String {
 }
 ```
 
-En otras palabras, una funcion de extensión es una función que puede ser llamada como miembro de una clase, pero esta definida por fuera de lla
+En otras palabras, una funcion de extensión es una función que puede ser llamada como miembro de una clase, pero esta definida por fuera de ella.
+
+## ****Tipos de parámetros en las funciones****
+
+Dependiendo de la función que queramos, se pueden crear distintos tipos de parametros: nombrados o por defecto
+
+```kotlin
+imprimirNombre("Luis", "Rodriguez")
+  /*Mi nombre es: Luis y mi apellido es Rodriguez*/
+
+  printWholeName("","Miguel", "Rodriguez")
+  /*My name is  Miguel Rodriguez*/
+}
+fun imprimirNombre(nombre: String, apellido: String){
+  println("Mi nombre es: $nombre y mi apellido es $apellido")
+}
+
+/*imprimir en caso de que el segundo nombre este vacio*/
+fun printWholeName(firstName: String, secondName: String = "", surName: String) {
+    println("My name is $firstName ${if (secondName.isNotEmpty()) "$secondName " else ""}$surName")
+```
+
+[https://replit.com/@LuisMiguelRguez/course-kotilin#clases/tipoparametro.kt](https://replit.com/@LuisMiguelRguez/course-kotilin#clases/tipoparametro.kt)
