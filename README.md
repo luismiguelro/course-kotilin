@@ -371,7 +371,9 @@ La sintaxis de un literal lambda va al interior de dos llaves {}. Sus componente
 - Operador de flecha ->:Se omite si no usas lista de parámetros
 - Cuerpo del lambda: Son las sentencias que van luego del operador de flecha
 - Sintaxis De Expresiones Lambda En KotlinLa anterior sintaxis de la imagen se puede leer como «para cada par de s y t corresponde el valor 2*(s+t)
-fun main(args: Array<String>) {
+	
+```kotlin
+	fun main(args: Array<String>) {
   /*Funciones que no se declaran sino que se pasan inmediatamente como una expresion*/
 
   //Declaración
@@ -388,5 +390,6 @@ fun main(args: Array<String>) {
     /*[4,4]*/
 
 }
+```
 
 [https://replit.com/@LuisMiguelRguez/course-kotilin#clases/lambdas.kt](https://replit.com/@LuisMiguelRguez/course-kotilin#clases/lambdas.kt)
