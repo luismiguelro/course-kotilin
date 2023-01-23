@@ -358,3 +358,35 @@ fun printWholeName(firstName: String, secondName: String = "", surName: String) 
 ```
 
 [https://replit.com/@LuisMiguelRguez/course-kotilin#clases/tipoparametro.kt](https://replit.com/@LuisMiguelRguez/course-kotilin#clases/tipoparametro.kt)
+
+## ****Lambdas****
+
+Una función lambda es un literal de función que puede ser usado como expresión. Esto quiere decir, una función que no está ligada a un identificador y que puedes usar como valor.
+
+La sintaxis de un literal lambda va al interior de dos llaves {}. Sus componentes son:
+
+![https://www.develou.com/wp-content/uploads/2021/01/sintaxis-de-lambda-en-kotlin.png](https://www.develou.com/wp-content/uploads/2021/01/sintaxis-de-lambda-en-kotlin.png)
+
+- Lista de parámetros: Cada parámetro es una declaración de variable, aunque esta lista es opcional
+- Operador de flecha ->:Se omite si no usas lista de parámetros
+- Cuerpo del lambda: Son las sentencias que van luego del operador de flecha
+- Sintaxis De Expresiones Lambda En KotlinLa anterior sintaxis de la imagen se puede leer como «para cada par de s y t corresponde el valor 2*(s+t)
+fun main(args: Array<String>) {
+  /*Funciones que no se declaran sino que se pasan inmediatamente como una expresion*/
+
+  //Declaración
+  val myLambda : (String) ->  Int ={it.length}
+
+  val lambdaEjecutada: Int = myLambda("MigueLucho")
+  //Imprimir
+  println(lambdaEjecutada)
+  /*10*/
+
+  val saludos = listOf("Hola","Ciao")
+    val longitudSaludos = saludos.map(myLambda)
+    println(longitudSaludos)
+    /*[4,4]*/
+
+}
+
+[https://replit.com/@LuisMiguelRguez/course-kotilin#clases/lambdas.kt](https://replit.com/@LuisMiguelRguez/course-kotilin#clases/lambdas.kt)
