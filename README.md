@@ -393,3 +393,129 @@ La sintaxis de un literal lambda va al interior de dos llaves {}. Sus componente
 ```
 
 [https://replit.com/@LuisMiguelRguez/course-kotilin#clases/lambdas.kt](https://replit.com/@LuisMiguelRguez/course-kotilin#clases/lambdas.kt)
+
+# Scope Functions
+
+## Let
+
+Es una función que crea un alcance temporal para un objeto en el interior de un bloque de código.
+
+Esto quiere decir, que puedes referirte al objeto sin usar su nombre debido a que es el parámetro de la función lambda pasada a let.
+
+```kotlin
+fun main(args: Array<String>){
+
+    //Let ejecuta código cuando el valor no es nulo
+    var nombre: String? = null
+    nombre?.let{
+        //Código no se ejecutara al ser la variable nula
+        valor -> println("El nombre no es nulo es $valor")
+    }
+
+    nombre = "David"
+    nombre?.let{
+        //Código  se ejecutara
+        valor -> println("El nombre no es nulo, es $valor")
+    }
+}
+```
+
+## With
+
+Nos ayuda a acceder directamente a las propiedades de la variable o a la misma variable utilizando this.
+
+```kotlin
+fun main() {
+    val numeros = listOf(3, 1, 5, 2, 10)
+
+/* Se tiene acceso directo al scope de los número con with, 
+así ya no necesitamos escribir el nombre de la variable*/
+    with(numeros) {
+        println("Estos  son los numeros $this")
+        println("Este es el primer elemento: ${first()}")
+        println("Esta es la lista ordenada: ${sorted()}")
+        println("Y esta es la lista mezclada aleatoriamente: ${shuffled()}")
+    }
+}
+```
+
+## Run
+
+**La Función run()**
+
+`run` hace parte de las [funciones de alcance](https://kotlinlang.org/docs/reference/scope-functions.html#run) que Kotlin te provee para mejorar la legibilidad y hacer más conciso tu código.
+
+Al igual que la [función let](https://www.develou.com/la-funcion-let-en-kotlin/), toma una [función lambda](https://www.develou.com/lambdas-en-kotlin/) como parámetro, ejecuta sus sentencias y retorna como resultado el valor computado desde `R`.
+
+```
+inline fun <T, R> T.run(block: T.() -> R): R
+```
+
+La única diferencia es que el parámetro `block` es un [tipo función con recibidor](https://www.develou.com/lambdas-con-recibidor-en-kotlin/), por lo que debes usar la expresión `this` para referirte al objeto recibidor.
+
+```
+fun main() {
+    val resultado = "Ejemplo".run {
+        println("El String \"$this\" tiene $length caracteres")
+        length
+    }
+}
+```
+
+En el ejemplo anterior podemos usar `this` para referirnos al contenido del String y acceder directamente a `length`, ya que el objeto recibidor de la lambda es el contexto del alcance en el bloque de código.
+
+Ejemplo:
+
+```kotlin
+fun main(args: Array<String>){
+    val moviles = mutableListOf("Samsung A50","Samsung A51","Samsung A52")
+            .run{
+                removeIf{ movil->movil.contains("A50") }
+                this
+            }
+    println(moviles)
+}
+```
+
+## Apply
+
+```kotlin
+
+fun main(args: Array<String>) {
+    val moviles = mutableListOf("Google Pixel 2XL", "Google Pixel 4a", "Huawei Redmi 9", "Xiaomi mi a3").apply{
+            removeIf{movil -> movil.contains("Google")}
+    }
+    println(moviles)
+
+    val colores : MutableList<String>? = mutableListOf("Amarillo", "Azul", "Rojo")
+    colores?.apply {
+        println("Nuestros colores son $this")
+        println("La cantidad de colores es $size")
+    }
+}
+```
+
+```kotlin
+fun main(args: Array<String>) {
+    val moviles = mutableListOf("Google Pixel 2XL", "Google Pixel 4a", "Huawei Redmi 9", "Xiaomi mi a3").apply{
+            removeIf{movil -> movil.contains("Google")}
+    }
+    println(moviles)
+
+    val colores : MutableList<String>? = mutableListOf("Amarillo", "Azul", "Rojo")
+    colores?.apply {
+        println("Nuestros colores son $this")
+        println("La cantidad de colores es $size")
+    }
+}
+```
+
+## Apply
+
+```kotlin
+// also -> Allow us to obtain a variable then execute a code with that variable an return it to be use
+    val appleDevices = mutableListOf("Apple Watch", "iMac", "iPhone", "HomePod", "Airpods", "iPad", "iPod", "MacBook")
+        .also { list -> println("the original value of the list is $list") }
+        .asReversed()
+    println(appleDevices)
+```
