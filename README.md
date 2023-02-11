@@ -9,7 +9,6 @@ This workspace is the notes and exercises of the [Kotlin Course from Zero in Pla
 [Check out the official docs here](https://kotlinlang.org/docs/home.html).
 ---------
 
-
 # **Introducción a Kotlin**
 
 ## ****Qué es la Java Virtual Machine?****
@@ -28,7 +27,7 @@ Mejora la compilación y los tiempos de respuesta en la virtualización del su c
 
 Nosotros ingresamos código de Kotlin y se transforma en Bytecode. Este proceso puede ocurrir con otros lenguajes como Java, esto hace que nuestro código de Kotlin pueda ser utilizado desde Java y el código de Java pueda ser utilizado en Kotlin.
 
-## Qupe es Kotlin?
+## Que es Kotlin?
 
 Kotlin es un lenguaje de programación estático de código abierto que admite la programación funcional y orientada a objetos. Proporciona una sintaxis y conceptos similares a los de otros lenguajes, como C#, Java y Scala, entre muchos otros. No pretende ser único, sino que se inspira en décadas de desarrollo del lenguaje. Cuenta con variantes que se orientan a la JVM (Kotlin/JVM), JavaScript (Kotlin/JS) y el código nativo (Kotlin/Native)
 
