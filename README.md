@@ -3,10 +3,12 @@
 This is the Template Repl for Kotlin. 
 
 Kotlin is a statically typed programming language interoperable with Java and Android.
+[Check out the official docs here](https://kotlinlang.org/docs/home.html).
 
 This workspace is the notes and exercises of the [Kotlin Course from Zero in Platzi.](https://platzi.com/cursos/kotlin/)
 
-[Check out the official docs here](https://kotlinlang.org/docs/home.html).
+  - [Questions and answers -Exam](kotlin_desde_cero.md)
+  - [Certificación](https://platzi.com/p/luismiguelrod/curso/2245-kotlin/diploma/detalle/)
 ---------
 
 # **Introducción a Kotlin**
@@ -521,6 +523,5 @@ fun main(args: Array<String>) {
         .asReversed()
     println(appleDevices)
 ```
-  - [Questions and answers -Exam](kotlin_desde_cero.md)
-  - [Certificación](https://platzi.com/p/luismiguelrod/curso/2245-kotlin/diploma/detalle/)
+
   
