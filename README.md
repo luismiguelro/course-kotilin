@@ -7,6 +7,9 @@ Kotlin is a statically typed programming language interoperable with Java and An
 This workspace is the notes and exercises of the [Kotlin Course from Zero in Platzi.](https://platzi.com/cursos/kotlin/)
 
 [Check out the official docs here](https://kotlinlang.org/docs/home.html).
+---------
+
+
 # **Introducción a Kotlin**
 
 ## ****Qué es la Java Virtual Machine?****
@@ -519,3 +522,6 @@ fun main(args: Array<String>) {
         .asReversed()
     println(appleDevices)
 ```
+  - [Questions and answers -Exam](kotlin_desde_cero.md)
+  - [Certificación](https://platzi.com/p/luismiguelrod/curso/2245-kotlin/diploma/detalle/)
+  
